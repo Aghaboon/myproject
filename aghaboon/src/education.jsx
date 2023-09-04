@@ -1,4 +1,4 @@
-import NavBar from './NavBar';
+import './App.css';
 
 const Education = () => {
     return ( 

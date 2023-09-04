@@ -1,16 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-/* here the name in the above the page */
 .NavBar{
-    display: grid;
-    height: 20%;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    padding-top: 5px;
 }
 
 .image-container {
-    display: inline-block;
-    vertical-align: middle; /* Vertically align the image and text */
+    display: inline;
+    vertical-align:middle; 
     margin-right: 10px; /* Add spacing between the image and text */
     padding-right: 5%;
-    padding-top: 1%;
+    
 }
 
 .text-container {
@@ -24,7 +29,7 @@
     width: 100%;
 }
 .myname{
-    font-size: 45px;
+    font-size: 40px;
     font-weight: bold;
     color: black;
   }
@@ -37,7 +42,6 @@
     background-color: #9a9898;
     padding: 10px 0;
     width: 100%;
-    height: 40px;
     text-align: center;
     justify-self: center;
 }
@@ -49,7 +53,7 @@
     align-items: center; /* Vertically center the items */
     margin: 0;
     padding: 0;
-    height: 100%; /* Ensure the navbar takes the full height */
+    
 }
   
 .nav-item {
