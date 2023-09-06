@@ -1,10 +1,9 @@
 import './App.css';
 const Home = () => {
     return ( 
-       <div>
-        
-        <p className='title'>About Me</p>
-        <p className='para'>
+       <div className='para'>
+        <p className='font-bold text-3xl'>About Me</p>
+        <p className='text-xl font-medium leading-9'>
           I'm a Senior Software Engineering student with a strong passion for both front-end and back-end development. 
           My internship at Bineyes involved creating web prototypes and developing user interfaces, where I followed Agile-Scrum methodology. 
           Currently pursuing a Bachelor's Degree in Software Engineering at Prince Mugrin University, I've earned accolades for academic excellence. 

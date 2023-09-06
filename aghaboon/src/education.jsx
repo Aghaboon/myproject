@@ -1,27 +1,14 @@
 import './App.css';
+import ListItem from './ListItem';
 
 const Education = () => {
+    const Educationlist = ['Prince Mugrin University', 'Expected Graduation: June 2024', 'Academic Achievements:']
+    const Achievements = ['Awarded the Prince Faisal bin Abdulaziz Award for Academic Excellence in the preparatory year (2020/2021).']
     return ( 
         <div>
-            <p className='eduPara'>
-                <b>Bachelor’s Degree in Software Engineering</b>
-                <br></br>
-                <ul>
-                    <li>
-                        Prince Mugrin University
-                    </li>
-                    <li>
-                        Expected Graduation: June 2024
-                    </li>
-                    <li>
-                        Academic Achievements:
-                        <ul>
-                            <li>
-                                Awarded the Prince Faisal bin Abdulaziz Award for Academic Excellence in the preparatory year (2020/2021).
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+            <p className='para'>
+                <b className='text-3xl'>Bachelor’s Degree in Software Engineering</b>
+                <ListItem items={Educationlist} subitems={Achievements}  />
             </p>
         </div>
      );

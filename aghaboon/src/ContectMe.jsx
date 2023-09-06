@@ -2,7 +2,7 @@ import NavBar from './NavBar';
 
 const ContectMe = () => {
     return ( 
-        <div>
+        <div className='para'>
             <div className='links-apps'>
             <div className='github'>
               

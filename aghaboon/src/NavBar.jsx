@@ -8,7 +8,7 @@ const NavBar = () => {
     <div className='NavBar'>
         <div className='name-major'>
             <div className='image-container'>
-              <img src={aghaboon} alt='aghaboon' className='profile-image' style={{ width: '140px', height: '180px', borderRadius: '50%' }}  />
+              <img src={aghaboon} alt='aghaboon' className='inline align-middle mr-2.5 pr-1.5 py-0.5' style={{ width: '140px', height: '180px', borderRadius: '50%' }} />
             </div>
             <div className='text-container'>
                 <h1 className='myname'>Abdulrahman Ghubun</h1>
