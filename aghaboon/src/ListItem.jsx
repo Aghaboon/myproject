@@ -12,7 +12,7 @@ const List = ({ items, subitems }) => {
       )}
 
       {Array.isArray(subitems) && (
-        <ul className="list-decimal list-inside text-xl font-semibold ps-5 ">
+        <ul className="list-decimal list-inside text-xl font-semibold ps-6 ">
           {subitems.map((subitem, index) => (
             <li key={index}>{subitem}</li>
           ))}
