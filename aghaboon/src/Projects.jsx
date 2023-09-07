@@ -40,11 +40,11 @@ const Projects = () => {
 
   return (
     <div>
-      <div className="para pt-[250px] grid justify-center w-full">
-        <Tabs aria-label="Dynamic tabs" items={tabs} className=" self-center w-full">
+      <div className="para pt-[250px] grid justify-center w-full ">
+        <Tabs aria-label="Dynamic tabs" items={tabs} className="flex justify-center w-full">
           {(item) => (
             <Tab key={item.id} title={item.label} >
-              <Card>
+              <Card className="w-[60vw]">
                 <CardBody>
                   <ul>
                     {item.content.map((point, index) => (
