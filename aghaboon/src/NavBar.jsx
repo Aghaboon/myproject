@@ -28,43 +28,43 @@ const NavBar = () => {
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
             className="sm:hidden"
           />
-          <NavbarBrand className='w-full justify-center'>
-            <img src={aghaboon} className="w-[100px] rounded-full aspect-square object-cover" />
-            <p className="font-bold text-inherit">
-              <h1>Abdulrahman Ghubun</h1>
-              <h2>Senior Software Engineering Student</h2>
+          <NavbarBrand className='w-full justify-center px-1.5 py-1.5'>
+            <img src={aghaboon} className="w-[150px] rounded-full aspect-square object-cover" />
+            <p className="font-bold text-inherit text-center pl-3.5" >
+              <h1 className='text-5xl '>Abdulrahman Ghubun</h1>
+              <h2 className='text-3xl'>Senior Software Engineering Student</h2>
             </p>
           </NavbarBrand>
         </NavbarContent>
 
-        <NavbarContent className="hidden sm:flex gap-4 justify-between" justify="between" >
+        <NavbarContent className="hidden sm:flex gap-4 justify-between pb-4" justify="between" >
           <NavbarItem>
-            <Link color="foreground" href="/home">
+            <Link color="foreground" href="/home" className='text-2xl font-medium'>
               Home
             </Link>
           </NavbarItem>
           <NavbarItem isActive>
-            <Link href="/education" aria-current="page">
+            <Link href="/education" aria-current="page" className='text-2xl font-medium'>
               Education
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link color="foreground" href="/workExperinces">
+            <Link color="foreground" href="/workExperinces" className='text-2xl font-medium'>
               Work Experinces
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link color="foreground" href="/projects">
+            <Link color="foreground" href="/projects" className='text-2xl font-medium'>
               Projects
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link color="foreground" href="/skills">
+            <Link color="foreground" href="/skills" className='text-2xl font-medium'>
               Skills
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link color="foreground" href="/contectMe">
+            <Link color="foreground" href="/contectMe" className='text-2xl font-medium'>
               Contect Me
             </Link>
           </NavbarItem>

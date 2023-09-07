@@ -40,7 +40,7 @@ const Projects = () => {
 
   return (
     <div>
-      <div className="para pt-[250px] grid justify-center w-full ">
+      <div className="para grid justify-center w-full ">
         <Tabs aria-label="Dynamic tabs" items={tabs} className="flex justify-center w-full">
           {(item) => (
             <Tab key={item.id} title={item.label} >
