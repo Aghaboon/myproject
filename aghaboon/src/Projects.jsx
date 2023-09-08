@@ -30,7 +30,7 @@ const Projects = () => {
   return (
     <div>
       <div className="text-3xl flex flex-col justify-center items-center py-3">
-        <Accordion variant="splitted" selectionMode="multiple" className="w-[70vw] ">
+        <Accordion variant="splitted" selectionMode="multiple" className="accoDis w-[70vw] ">
           <AccordionItem aria-label="Accordion 1" title={<p className="text-2xl ">Personal Portfolio Website</p>} className="text-2xl font-medium text-gray-800 bg-white">
             <ListItem items={PersonalWebsite} subitems={subWebsite} />
           </AccordionItem>
