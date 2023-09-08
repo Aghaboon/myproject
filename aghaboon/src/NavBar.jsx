@@ -34,7 +34,6 @@ const NavBar = () => {
 
         <NavbarContent className="hidden sm:flex gap-4 justify-between pb-4" justify="between" >
           <NavbarItem >
-            {/* <Link color="foreground" href="/home" className='text-2xl font-medium'> */}
             <NavLink
               to="/home"
               style={({ isActive, isPending }) => {
@@ -47,7 +46,6 @@ const NavBar = () => {
             >
               Home
             </NavLink>
-            {/* </Link> */}
           </NavbarItem>
           <NavbarItem isActive>
             <NavLink
