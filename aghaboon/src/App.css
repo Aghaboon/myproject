@@ -59,10 +59,11 @@
   }
 
   .myname{
-    font-size: 200%;
+    font-size: 100%;
+    padding-top: 10px;
   }
   .mymajor{
-    font-size: 150%;
+    font-size: 80%;
   }
   .nav{
     padding-bottom: 30px;
