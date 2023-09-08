@@ -4,7 +4,7 @@ const List = ({ items, subitems }) => {
   return (
     <div>
       {Array.isArray(items) && (
-        <ul className="list-disc list-inside text-xl font-semibold">
+        <ul className="list-disc list-inside text-xl font-semibold ps-3">
           {items.map((item, index) => (
             <li key={index}>{item}</li>
           ))}
@@ -12,7 +12,7 @@ const List = ({ items, subitems }) => {
       )}
 
       {Array.isArray(subitems) && (
-        <ul className="list-decimal list-inside text-xl font-semibold ps-6 ">
+        <ul className="list-decimal list-inside text-xl font-semibold ps-9 ">
           {subitems.map((subitem, index) => (
             <li key={index}>{subitem}</li>
           ))}

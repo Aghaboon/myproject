@@ -26,18 +26,11 @@
   text-align: justify;
 } */
 
+:root {
+  background-color: rgb(243 244 246);;
+}
 .button{
   border-color: #000;
-}
-
-.cont{
-  padding-top: 250px;
-}
-/* CustomAccordion.css */
-.accordion-item {
-  /* width: 400px; 
-  font-size: 25px;
-  font-weight: bold; */
 }
 
 .title{
@@ -46,7 +39,6 @@
   text-align: left;
   padding-left: 10%;
   padding-right: 10%;
-  padding-top: 250px;
   text-align: justify;
 }
 
@@ -59,9 +51,28 @@
   text-align: justify;
 }
 
-@media (width < 1173px){
-  .para{
-    padding-top: 300px;
+
+@media (max-width: 640px) {
+  .flex-reverse {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .myname{
+    font-size: 200%;
+  }
+  .mymajor{
+    font-size: 150%;
+  }
+  .nav{
+    padding-bottom: 30px;
+  }
+  
+}
+
+@media (max-width: 930px) {
+  .contectme{
+    flex-direction: column;
   }
 }
 

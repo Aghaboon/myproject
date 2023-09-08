@@ -65,29 +65,3 @@ function App() {
 }
 
 export default App;
-
-
-
-
-
-// import React from 'react';
-// import './App.css';
-// import { BrowserRouter, Route, Routes } from 'react-router-dom';
-// import MyInformation from './NavBar';
-// import Home from './Home';
-// import Education from './education';
-
-// function App() {
-//   return (
-//     <BrowserRouter>
-//       <MyInformation />
-//       <Routes>
-//         <Route path="/" element={<Home />} />
-//         <Route path="/education/*" element={<Education />} />
-//         {/* Add other routes as needed */}
-//       </Routes>
-//     </BrowserRouter>
-//   );
-// }
-
-// export default App;
