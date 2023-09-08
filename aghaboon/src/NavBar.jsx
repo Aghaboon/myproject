@@ -130,9 +130,9 @@ const NavBar = () => {
             </Button>
           </NavbarItem>
         </NavbarContent> */}
-        <NavbarMenu>
+        <NavbarMenu >
           {menuItems.map((item, index) => (
-            <NavbarMenuItem key={`${item}-${index}`}>
+            <NavbarMenuItem key={`${item}-${index}`} className='!text-2xl pb-2'>
               <Link
                 color={
                   "foreground"
