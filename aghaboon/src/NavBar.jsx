@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-  const menuItems = [
+  const menuItes = [
     "Home",
     "Education",
     "Work Experinces",
@@ -15,6 +15,34 @@ const NavBar = () => {
     "Skills",
     "Contect Me",
   ];
+
+  const menuItems = [
+    {
+      label: "Home",
+      to: "/", 
+    },
+    {
+      label: "Education",
+      to: "/education",
+    },
+    {
+      label: "Work Experiences",
+      to: "/workExperiences", // Adjust this to match your actual route
+    },
+    {
+      label: "Projects",
+      to: "/projects", // Adjust this to match your actual route
+    },
+    {
+      label: "Skills",
+      to: "/skills", // Adjust this to match your actual route
+    },
+    {
+      label: "Contect Me",
+      to: "/contectMe", // Adjust this to match your actual route
+    },
+  ];
+
   return (
     <Navbar onMenuOpenChange={setIsMenuOpen} height={"fit-content"} className='nav bg-gray-100 '>
       <div className='flex flex-col justify-center w-full'>
@@ -130,6 +158,18 @@ const NavBar = () => {
         </NavbarContent> */}
         <NavbarMenu >
           {menuItems.map((item, index) => (
+            <NavbarMenuItem key={`${item.label}-${index}`} className='!text-2xl pb-2'>
+              <Link
+                color="foreground"
+                className="w-full"
+                href={item.to} // Use the 'to' attribute from the menu items
+                size="lg"
+              >
+                {item.label}
+              </Link>
+            </NavbarMenuItem>
+          ))}
+          {/* {menuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`} className='!text-2xl pb-2'>
               <Link
                 color={
@@ -142,7 +182,7 @@ const NavBar = () => {
                 {item}
               </Link>
             </NavbarMenuItem>
-          ))}
+          ))} */}
         </NavbarMenu>
       </div>
     </Navbar>
