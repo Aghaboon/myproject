@@ -16,7 +16,7 @@ const NavBar = () => {
     "Contect Me",
   ];
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen} height={"fit-content"} className='nav bg-gray-100 pb-7'>
+    <Navbar onMenuOpenChange={setIsMenuOpen} height={"fit-content"} className='nav bg-gray-100 '>
       <div className='flex flex-col justify-center w-full'>
         <NavbarContent>
           <NavbarMenuToggle
@@ -32,17 +32,17 @@ const NavBar = () => {
           </NavbarBrand>
         </NavbarContent>
 
-        <NavbarContent className="hidden sm:flex gap-4 justify-between pb-4" justify="between" >
+        <NavbarContent className="hidden sm:flex gap-4 justify-between pb-4 " justify="between" >
           <NavbarItem >
             <NavLink
-              to="/home"
+              to="/"
               style={({ isActive, isPending }) => {
                 return {
                   fontWeight: isActive ? "bold" : "",
                   color: isActive ? "rgb(59 130 246)" : "black",
                 };
               }}
-              className='text-2xl font-medium'
+              className='text-2xl font-medium '
             >
               Home
             </NavLink>

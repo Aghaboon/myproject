@@ -10,7 +10,7 @@ const Skills = () => {
     const SoftSkills = ['Problem-Solving', 'Teamwork', 'Communication'];
     const Languages = ['Fluent in Arabic', 'Good in English'];
     return (
-        <div className="text-3xl flex flex-col justify-center items-center py-3">
+        <div className="conText text-3xl flex flex-col justify-center items-center py-3">
             <Accordion variant="splitted" selectionMode="multiple" className="accoDis w-[70vw] ">
                 <AccordionItem aria-label="Accordion 1" title={<p className="text-2xl ">Programming Languages</p>} className="text-2xl font-medium text-gray-800 bg-white">
                     <ListItem items={programmingLanguages} />

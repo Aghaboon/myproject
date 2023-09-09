@@ -2,7 +2,7 @@ import './App.css';
 const Home = () => {
   const Space = '\u00A0\u00A0\u00A0\u00A0\u00A0';
     return ( 
-       <div className='para'>
+       <div className='para conText' >
         <p className='font-bold text-3xl'>About Me</p>
         <article className='text-xl font-medium leading-9'>
           {Space} I'm a Senior Software Engineering student with a strong passion for both front-end and back-end development. 
