@@ -27,7 +27,7 @@ const NavBar = () => {
     },
     {
       label: "Work Experiences",
-      to: "/workExperiences", // Adjust this to match your actual route
+      to: "/workExperinces", // Adjust this to match your actual route
     },
     {
       label: "Projects",
