@@ -49,7 +49,7 @@ const NavBar = () => {
         <NavbarContent>
           <NavbarMenuToggle
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-            className="sm:hidden"
+            className="sm:hidden bg-red-300 h-[15px]"
           />
           <NavbarBrand className='flex-reverse w-full justify-center px-1.5 py-1.5'>
             <img src={aghaboon} className="w-[150px] rounded-full aspect-square object-cover" />
