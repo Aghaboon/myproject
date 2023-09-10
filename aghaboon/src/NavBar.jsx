@@ -13,7 +13,7 @@ const NavBar = () => {
     "Work Experinces",
     "Projects",
     "Skills",
-    "Contect Me",
+    "Contact Me",
   ];
 
   const menuItems = [
@@ -38,8 +38,8 @@ const NavBar = () => {
       to: "/skills", // Adjust this to match your actual route
     },
     {
-      label: "Contect Me",
-      to: "/contectMe", // Adjust this to match your actual route
+      label: "Contact Me",
+      to: "/contactMe", // Adjust this to match your actual route
     },
   ];
 
@@ -49,7 +49,7 @@ const NavBar = () => {
         <NavbarContent>
           <NavbarMenuToggle
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-            className="sm:hidden bg-red-300 h-[15px]"
+            className="sm:hidden h-[20px] w-[30px] absolute top-[110px] left-[20px]"
           />
           <NavbarBrand className='flex-reverse w-full justify-center px-1.5 py-1.5'>
             <img src={aghaboon} className="w-[150px] rounded-full aspect-square object-cover" />
@@ -133,7 +133,7 @@ const NavBar = () => {
           </NavbarItem>
           <NavbarItem>
             <NavLink
-              to="/contectMe"
+              to="/contactMe"
               style={({ isActive, isPending }) => {
                 return {
                   fontWeight: isActive ? "bold" : "",
@@ -142,7 +142,7 @@ const NavBar = () => {
               }}
               className='text-2xl font-medium'
             >
-              Contect Me
+              Contact Me
             </NavLink>
           </NavbarItem>
         </NavbarContent>

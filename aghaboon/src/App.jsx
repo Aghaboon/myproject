@@ -5,7 +5,7 @@ import Education from './education';
 import WorkExperinces from './WorkExperinces';
 import Projects from './Projects';
 import Skills from './Skills';
-import ContectMe from './ContectMe';
+import ContactMe from './ContactMe';
 import { Outlet } from 'react-router-dom';
 import {createBrowserRouter, RouterProvider, } from 'react-router-dom'
 
@@ -36,8 +36,8 @@ const router = createBrowserRouter ([
         element: <div><Skills /></div>,
       },
       {
-        path: '/contectMe',
-        element: <div><ContectMe /></div>,
+        path: '/contactMe',
+        element: <div><ContactMe /></div>,
       },
     ]
   },

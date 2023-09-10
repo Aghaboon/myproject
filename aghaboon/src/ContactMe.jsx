@@ -1,9 +1,9 @@
 import NavBar from './NavBar';
 
-const ContectMe = () => {
+const ContactMe = () => {
   return (
     <div className='flex justify-center items-center h-[70vh]'>
-      <div className='contectme flex  justify-between justify-self-center w-[70vw] '>
+      <div className='Contactme flex  justify-between justify-self-center w-[70vw] '>
         <div className='flex flex-col justify-center items-center pb-2'>
           <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 50 50" fill="none">
             <g clip-path="url(#clip0_110_2)">
@@ -46,4 +46,4 @@ const ContectMe = () => {
   );
 }
 
-export default ContectMe;
+export default ContactMe;
