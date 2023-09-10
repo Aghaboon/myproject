@@ -11,10 +11,10 @@ const WorkExperinces = () => {
     ]
     return ( 
         <div className='conText para'>
-            <p className='text-3xl'>
+            <article className='text-3xl'>
                 <b className='text-3xl'>Front-end Development Intern</b>
                 <ListItem items={bineyes} subitems={Achievements}/>
-            </p>
+            </article>
         </div>
     );
 }
