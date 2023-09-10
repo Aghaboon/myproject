@@ -92,7 +92,7 @@
   
 }
 
-@media (max-width: 930px) {
+@media (max-width: 1000px) {
   .Contactme{
     flex-direction: column;
   }

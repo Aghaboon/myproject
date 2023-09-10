@@ -67,10 +67,10 @@ const NavBar = () => {
               style={({ isActive, isPending }) => {
                 return {
                   fontWeight: isActive ? "bold" : "",
-                  color: isActive ? "rgb(59 130 246)" : "black",
+                  color: isActive ? "rgb(30 64 175)" : "",
                 };
               }}
-              className='text-2xl font-medium '
+              className='text-2xl font-medium text-black hover:text-blue-500'
             >
               Home
             </NavLink>
@@ -81,10 +81,10 @@ const NavBar = () => {
               style={({ isActive, isPending }) => {
                 return {
                   fontWeight: isActive ? "bold" : "",
-                  color: isActive ? "rgb(59 130 246)" : "black",
+                  color: isActive ? "rgb(30 64 175)" : "",
                 };
               }}
-              className='text-2xl font-medium'
+              className='text-2xl font-medium text-black hover:text-blue-500'
             >
               Education
             </NavLink>
@@ -95,10 +95,10 @@ const NavBar = () => {
               style={({ isActive, isPending }) => {
                 return {
                   fontWeight: isActive ? "bold" : "",
-                  color: isActive ? "rgb(59 130 246)" : "black",
+                  color: isActive ? "rgb(30 64 175)" : "",
                 };
               }}
-              className='text-2xl font-medium'
+              className='text-2xl font-medium text-black hover:text-blue-500'
             >
               Work Experinces
             </NavLink>
@@ -109,10 +109,10 @@ const NavBar = () => {
               style={({ isActive, isPending }) => {
                 return {
                   fontWeight: isActive ? "bold" : "",
-                  color: isActive ? "rgb(59 130 246)" : "black",
+                  color: isActive ? "rgb(30 64 175)" : "",
                 };
               }}
-              className='text-2xl font-medium'
+              className='text-2xl font-medium text-black hover:text-blue-500'
             >
               Projects
             </NavLink>
@@ -123,10 +123,10 @@ const NavBar = () => {
               style={({ isActive, isPending }) => {
                 return {
                   fontWeight: isActive ? "bold" : "",
-                  color: isActive ? "rgb(59 130 246)" : "black",
+                  color: isActive ? "rgb(30 64 175)" : "",
                 };
               }}
-              className='text-2xl font-medium'
+              className='text-2xl font-medium text-black hover:text-blue-500'
             >
               Skills
             </NavLink>
@@ -137,10 +137,10 @@ const NavBar = () => {
               style={({ isActive, isPending }) => {
                 return {
                   fontWeight: isActive ? "bold" : "",
-                  color: isActive ? "rgb(59 130 246)" : "black",
+                  color: isActive ? "rgb(30 64 175)" : "",
                 };
               }}
-              className='text-2xl font-medium'
+              className='text-2xl font-medium text-black hover:text-blue-500'
             >
               Contact Me
             </NavLink>
