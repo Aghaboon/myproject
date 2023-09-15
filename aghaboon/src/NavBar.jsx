@@ -19,7 +19,7 @@ const NavBar = () => {
   const menuItems = [
     {
       label: "Home",
-      to: "/", 
+      to: "/",
     },
     {
       label: "Education",
@@ -44,108 +44,112 @@ const NavBar = () => {
   ];
 
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen} height={"fit-content"} className='nav bg-gray-100 '>
+    <Navbar onMenuOpenChange={setIsMenuOpen} height={"fit-content"} className='nav  pb-3'>
       <div className='flex flex-col justify-center w-full'>
-        <NavbarContent>
-          <NavbarMenuToggle
-            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-            className="sm:hidden h-[20px] w-[30px] absolute top-[110px] left-[20px]"
-          />
-          <NavbarBrand className='flex-reverse w-full justify-center px-1.5 py-1.5'>
-            <img src={aghaboon} className="w-[150px] rounded-full aspect-square object-cover" />
-            <article className="font-bold text-inherit text-center pl-3.5" >
-              <h1 className='myname text-5xl '>Abdulrahman Ghubun</h1>
-              <h2 className='mymajor text-3xl'>Senior Software Engineering Student</h2>
-            </article>
-          </NavbarBrand>
-        </NavbarContent>
+        <div className='flex flex-col justify-center w-full items-center pt-2'>
+          <NavbarContent className='bg-gray-100 w-[80vw] shadow-inner rounded-lg'>
+            <NavbarMenuToggle
+              aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+              className="sm:hidden h-[20px] w-[30px] absolute top-[110px] left-[10px]"
+            />
+            <NavbarBrand className='flex-reverse w-full justify-center px-1.5 py-1.5  '>
+              <img src={aghaboon} className="w-[150px] rounded-full aspect-square object-cover" />
+              <article className="font-bold text-inherit text-center pl-3.5" >
+                <h1 className='myname text-5xl '>Abdulrahman Ghubun</h1>
+                <h2 className='mymajor text-3xl'>Senior Software Engineering Student</h2>
+              </article>
+            </NavbarBrand>
+          </NavbarContent>
+        </div>
 
-        <NavbarContent className="hidden sm:flex gap-4 justify-between pb-4 " justify="between" >
-          <NavbarItem >
-            <NavLink
-              to="/"
-              style={({ isActive, isPending }) => {
-                return {
-                  fontWeight: isActive ? "bold" : "",
-                  color: isActive ? "rgb(30 64 175)" : "",
-                };
-              }}
-              className='text-2xl font-medium text-black hover:text-blue-500'
-            >
-              Home
-            </NavLink>
-          </NavbarItem>
-          <NavbarItem isActive>
-            <NavLink
-              to="/education"
-              style={({ isActive, isPending }) => {
-                return {
-                  fontWeight: isActive ? "bold" : "",
-                  color: isActive ? "rgb(30 64 175)" : "",
-                };
-              }}
-              className='text-2xl font-medium text-black hover:text-blue-500'
-            >
-              Education
-            </NavLink>
-          </NavbarItem >
-          <NavbarItem>
-            <NavLink
-              to="/workExperinces"
-              style={({ isActive, isPending }) => {
-                return {
-                  fontWeight: isActive ? "bold" : "",
-                  color: isActive ? "rgb(30 64 175)" : "",
-                };
-              }}
-              className='text-2xl font-medium text-black hover:text-blue-500'
-            >
-              Work Experinces
-            </NavLink>
-          </NavbarItem>
-          <NavbarItem>
-            <NavLink
-              to="/projects"
-              style={({ isActive, isPending }) => {
-                return {
-                  fontWeight: isActive ? "bold" : "",
-                  color: isActive ? "rgb(30 64 175)" : "",
-                };
-              }}
-              className='text-2xl font-medium text-black hover:text-blue-500'
-            >
-              Projects
-            </NavLink>
-          </NavbarItem>
-          <NavbarItem>
-            <NavLink
-              to="/skills"
-              style={({ isActive, isPending }) => {
-                return {
-                  fontWeight: isActive ? "bold" : "",
-                  color: isActive ? "rgb(30 64 175)" : "",
-                };
-              }}
-              className='text-2xl font-medium text-black hover:text-blue-500'
-            >
-              Skills
-            </NavLink>
-          </NavbarItem>
-          <NavbarItem>
-            <NavLink
-              to="/contactMe"
-              style={({ isActive, isPending }) => {
-                return {
-                  fontWeight: isActive ? "bold" : "",
-                  color: isActive ? "rgb(30 64 175)" : "",
-                };
-              }}
-              className='text-2xl font-medium text-black hover:text-blue-500'
-            >
-              Contact Me
-            </NavLink>
-          </NavbarItem>
-        </NavbarContent>
+        <div className='flex flex-col justify-center w-full items-center pt-5'>
+          <NavbarContent className="hidden sm:flex gap-4 justify-between p-2 px-4 bg-gray-100 w-[80vw] shadow-inner rounded-lg" justify="between" >
+            <NavbarItem >
+              <NavLink
+                to="/"
+                style={({ isActive, isPending }) => {
+                  return {
+                    fontWeight: isActive ? "bold" : "",
+                    color: isActive ? "rgb(30 64 175)" : "",
+                  };
+                }}
+                className='text-2xl font-medium text-black hover:text-blue-500'
+              >
+                Home
+              </NavLink>
+            </NavbarItem>
+            <NavbarItem isActive>
+              <NavLink
+                to="/education"
+                style={({ isActive, isPending }) => {
+                  return {
+                    fontWeight: isActive ? "bold" : "",
+                    color: isActive ? "rgb(30 64 175)" : "",
+                  };
+                }}
+                className='text-2xl font-medium text-black hover:text-blue-500'
+              >
+                Education
+              </NavLink>
+            </NavbarItem >
+            <NavbarItem>
+              <NavLink
+                to="/workExperinces"
+                style={({ isActive, isPending }) => {
+                  return {
+                    fontWeight: isActive ? "bold" : "",
+                    color: isActive ? "rgb(30 64 175)" : "",
+                  };
+                }}
+                className='text-2xl font-medium text-black hover:text-blue-500'
+              >
+                Work Experinces
+              </NavLink>
+            </NavbarItem>
+            <NavbarItem>
+              <NavLink
+                to="/projects"
+                style={({ isActive, isPending }) => {
+                  return {
+                    fontWeight: isActive ? "bold" : "",
+                    color: isActive ? "rgb(30 64 175)" : "",
+                  };
+                }}
+                className='text-2xl font-medium text-black hover:text-blue-500'
+              >
+                Projects
+              </NavLink>
+            </NavbarItem>
+            <NavbarItem>
+              <NavLink
+                to="/skills"
+                style={({ isActive, isPending }) => {
+                  return {
+                    fontWeight: isActive ? "bold" : "",
+                    color: isActive ? "rgb(30 64 175)" : "",
+                  };
+                }}
+                className='text-2xl font-medium text-black hover:text-blue-500'
+              >
+                Skills
+              </NavLink>
+            </NavbarItem>
+            <NavbarItem>
+              <NavLink
+                to="/contactMe"
+                style={({ isActive, isPending }) => {
+                  return {
+                    fontWeight: isActive ? "bold" : "",
+                    color: isActive ? "rgb(30 64 175)" : "",
+                  };
+                }}
+                className='text-2xl font-medium text-black hover:text-blue-500'
+              >
+                Contact Me
+              </NavLink>
+            </NavbarItem>
+          </NavbarContent>
+        </div>
         {/* <NavbarContent justify="end">
           <NavbarItem className="hidden lg:flex">
             <Link href="#">Login</Link>
