@@ -34,16 +34,16 @@ const Projects = () => {
           {/* <AccordionItem aria-label="Accordion 1" title={<p className="text-2xl ">Personal Portfolio Website</p>} className="text-2xl font-medium text-gray-800 bg-white">
             <ListItem items={PersonalWebsite} subitems={subWebsite} />
           </AccordionItem> */}
-          <AccordionItem aria-label="Accordion 1" title={<p className="text-2xl ">Takaful</p>} className="w-full  text-2xl font-medium text-gray-800 bg-white">
+          <AccordionItem aria-label="Accordion 1" title={<p className="text-2xl font-bold">Takaful</p>} className="w-full  text-2xl font-medium text-gray-800 bg-white">
             <ListItem items={Takaful} subitems={subTakaful} />
           </AccordionItem>
-          <AccordionItem aria-label="Accordion 2" title={<p className="text-2xl">OnlyBooks</p>} className="w-full text-2xl font-medium text-gray-800 bg-gray-400">
+          <AccordionItem aria-label="Accordion 2" title={<p className="text-2xl font-bold">OnlyBooks</p>} className="w-full text-2xl font-medium text-gray-800 bg-gray-400">
             <ListItem items={OnlyBooks} />
           </AccordionItem>
-          <AccordionItem aria-label="Accordion 3" title={<p className="text-2xl">Inky Puzzle</p>} className="w-full text-2xl font-medium text-gray-800 bg-gray-400">
+          <AccordionItem aria-label="Accordion 3" title={<p className="text-2xl font-bold">Inky Puzzle</p>} className="w-full text-2xl font-medium text-gray-800 bg-gray-400">
             <ListItem items={Inky} subitems={subInky} />
           </AccordionItem>
-          <AccordionItem aria-label="Accordion 4" title={<p className="text-2xl">Chat Application</p>} className="w-full text-2xl font-medium text-gray-800 bg-gray-400">
+          <AccordionItem aria-label="Accordion 4" title={<p className="text-2xl font-bold">Chat Application</p>} className="w-full text-2xl font-medium text-gray-800 bg-gray-400">
             <ListItem items={Chat} subitems={subChat} />
           </AccordionItem>
         </Accordion>

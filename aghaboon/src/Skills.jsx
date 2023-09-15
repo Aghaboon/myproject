@@ -13,19 +13,19 @@ const Skills = () => {
         <div className="conText flex flex-col justify-center items-center">
             <div className="bgCont text-3xl flex flex-col justify-center items-center py-4 px-2">
                 <Accordion variant="splitted" selectionMode="multiple" className="accoDis flex flex-col justify-center items-center ">
-                    <AccordionItem aria-label="Accordion 1" title={<p className="text-2xl ">Programming Languages</p>} className="w-full text-2xl font-medium text-gray-800 bg-white">
+                    <AccordionItem aria-label="Accordion 1" title={<p className="text-2xl font-bold">Programming Languages</p>} className="w-full text-2xl font-medium text-gray-800 bg-white">
                         <ListItem items={programmingLanguages} />
                     </AccordionItem>
-                    <AccordionItem aria-label="Accordion 2" title={<p className="text-2xl">Web Development</p>} className="w-full text-2xl font-medium text-gray-800 bg-gray-400">
+                    <AccordionItem aria-label="Accordion 2" title={<p className="text-2xl font-bold">Web Development</p>} className="w-full text-2xl font-medium text-gray-800 bg-gray-400">
                         <ListItem items={WebDevelopment} />
                     </AccordionItem>
-                    <AccordionItem aria-label="Accordion 3" title={<p className="text-2xl">Software Technologies and Tools</p>} className="w-full text-2xl font-medium text-gray-800 bg-gray-400">
+                    <AccordionItem aria-label="Accordion 3" title={<p className="text-2xl font-bold">Software Technologies and Tools</p>} className="w-full text-2xl font-medium text-gray-800 bg-gray-400">
                         <ListItem items={TechnologiesTools} />
                     </AccordionItem>
-                    <AccordionItem aria-label="Accordion 4" title={<p className="text-2xl">Soft Skills</p>} className="w-full text-2xl font-medium text-gray-800 bg-gray-400">
+                    <AccordionItem aria-label="Accordion 4" title={<p className="text-2xl font-bold">Soft Skills</p>} className="w-full text-2xl font-medium text-gray-800 bg-gray-400">
                         <ListItem items={SoftSkills} />
                     </AccordionItem>
-                    <AccordionItem aria-label="Accordion 5" title={<p className="text-2xl">Languages</p>} className="w-full text-2xl font-medium text-gray-800 bg-gray-400">
+                    <AccordionItem aria-label="Accordion 5" title={<p className="text-2xl font-bold">Languages</p>} className="w-full text-2xl font-medium text-gray-800 bg-gray-400">
                         <ListItem items={Languages} />
 
                     </AccordionItem>
