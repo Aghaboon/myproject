@@ -29,7 +29,7 @@ const Projects = () => {
   const subChat = ['Python', 'Tkinter'];
   return (
     <div className="conText flex flex-col justify-center items-center">
-      <div className="bgCont text-3xl flex flex-col justify-center items-center py-3 px-2.5">
+      <div className="bgCont text-3xl flex flex-col justify-center items-center py-4 px-2">
         <Accordion variant="splitted" selectionMode="multiple" className="accoDis flex flex-col justify-center items-center ">
           {/* <AccordionItem aria-label="Accordion 1" title={<p className="text-2xl ">Personal Portfolio Website</p>} className="text-2xl font-medium text-gray-800 bg-white">
             <ListItem items={PersonalWebsite} subitems={subWebsite} />

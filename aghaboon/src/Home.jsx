@@ -3,7 +3,7 @@ const Home = () => {
   const Space = '\u00A0\u00A0\u00A0\u00A0\u00A0';
   return (
     <div className='conText flex flex-col justify-center items-center'>
-      <div className='bgCont py-3 px-2.5' >
+      <div className='bgCont py-2 px-4' >
         <p className='mainText font-bold text-3xl'>About Me</p>
         <article className='text-xl font-medium leading-9'>
           {Space} I'm a Senior Software Engineering student with a strong passion for both front-end and back-end development.

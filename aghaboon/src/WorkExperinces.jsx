@@ -11,7 +11,7 @@ const WorkExperinces = () => {
     ]
     return (
         <div className='conText flex flex-col justify-center items-center'>
-            <div className='bgCont py-3 px-2.5'>
+            <div className='bgCont py-2 px-4'>
                 <article>
                     <b className='mainText text-3xl'>Front-end Development Intern</b>
                     <ListItem items={bineyes} subitems={Achievements} />
