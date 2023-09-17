@@ -47,14 +47,14 @@ const NavBar = () => {
     <Navbar onMenuOpenChange={setIsMenuOpen} height={"fit-content"} className='nav  pb-3'>
       <div className='flex flex-col justify-center w-full'>
         <div className='flex flex-col justify-center w-full items-center pt-2'>
-          <NavbarContent className='bg-gray-100 w-[80vw] shadow-inner rounded-lg'>
+          <NavbarContent className='navmobile bg-gray-100 w-[80vw] shadow-inner rounded-lg'>
             <NavbarMenuToggle
               aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-              className="md:hidden h-[20px] w-[30px] absolute top-[110px] left-[10px]"
+              className="md:hidden h-[20px] w-[30px] absolute top-[110px] left-[45px]"
             />
             <NavbarBrand className='flex-reverse w-full justify-center px-1.5 py-1.5  '>
-              <img src={aghaboon} className="w-[150px] rounded-full aspect-square object-cover" />
-              <article className="font-bold text-inherit text-center pl-6" >
+              <img src={aghaboon} className="imagGH w-[150px] rounded-full aspect-square object-cover mr-6" />
+              <article className="font-bold text-inherit text-center " >
                 <h1 className='myname text-4xl '>Abdulrahman Ghubun</h1>
                 <h2 className='mymajor text-2xl'>Senior Software Engineering Student</h2>
               </article>
