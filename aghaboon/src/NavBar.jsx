@@ -50,7 +50,7 @@ const NavBar = () => {
           <NavbarContent className='navmobile bg-gray-100 w-[80vw] shadow-inner rounded-lg'>
             <NavbarMenuToggle
               aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-              className="md:hidden h-[20px] w-[30px] absolute top-[110px] left-[45px]"
+              className="md:hidden h-[20px] w-[30px] absolute top-[90px] left-[45px]"
             />
             <NavbarBrand className='flex-reverse w-full justify-center px-1.5 py-1.5  '>
               <img src={aghaboon} className="imagGH w-[150px] rounded-full aspect-square object-cover mr-6" />
