@@ -9,6 +9,7 @@ const Education = () => {
         <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
             transition={{ duration: 0.75, ease: "easeOut" }}
         >
             <div className="conText flex flex-col justify-center items-center">

@@ -15,6 +15,7 @@ const Home = () => {
           <motion.h1
             animate={{ y: 0 }}
             initial={{ y: "100%" }}
+            exit={{ opacity: 0 }}
             transition={{ delay: 0.25, duration: 0.5 }}
             className='mainText font-bold text-3xl'>
             About Me
