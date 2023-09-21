@@ -23,7 +23,7 @@ const Home = () => {
           <motion.article
             animate={{ y: 0 }}
             initial={{ y: "100%" }}
-            transition={{ delay: 0.4, duration: 0.8 }}
+            transition={{ delay: 0.4, duration: 0.9 }}
             className='text-xl font-medium leading-9'>
             {Space} I am a senior Software Engineering student with a deep passion for both front-end and back-end development.
             During my internship at Bineyes, I gained valuable experience in creating web prototypes and developing user interfaces, adhering to Agile-Scrum methodologies to ensure efficient project management.
