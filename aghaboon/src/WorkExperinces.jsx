@@ -20,7 +20,14 @@ const WorkExperinces = () => {
                 <div className='bgCont py-2 px-4'>
                     <article>
                         <b className='mainText text-3xl'>Front-end Development Intern</b>
-                        <ListItem items={bineyes} subitems={Achievements} />
+                        <motion.article
+                            animate={{ opacity: 1 }}
+                            initial={{ opacity: 0 }}
+                            transition={{ delay: 0.5, duration: 0.5 }}
+                        >
+                            <ListItem items={bineyes} subitems={Achievements} />
+                        </motion.article>
+
                     </article>
                 </div>
 

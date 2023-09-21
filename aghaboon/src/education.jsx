@@ -22,7 +22,13 @@ const Education = () => {
                             className='mainText text-3xl'>
                             Bachelor’s Degree in Software Engineering
                         </motion.b>
-                        <ListItem items={Educationlist} subitems={Achievements} />
+                        <motion.article
+                        animate={{ opacity: 1 }}
+                        initial={{ opacity: 0 }}
+                        transition={{ delay: 0.5, duration: 0.5 }}
+                        >
+                            <ListItem items={Educationlist} subitems={Achievements} />
+                        </motion.article>
                     </article>
                 </div>
             </div>
