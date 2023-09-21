@@ -1,11 +1,13 @@
 import { Accordion, AccordionItem } from "@nextui-org/accordion";
 import ListItem from './ListItem';
+import { motion } from "framer-motion";
+
 
 const Projects = () => {
-  const PersonalWebsite = ['Developed a responsive personal portfolio website using React.', 
-  'Integrated LinkedIn and GitHub profiles for easy access.', 
-  'Implemented a dynamic contact form for visitor inquiries.', 
-  'Technologies:'];
+  const PersonalWebsite = ['Developed a responsive personal portfolio website using React.',
+    'Integrated LinkedIn and GitHub profiles for easy access.',
+    'Implemented a dynamic contact form for visitor inquiries.',
+    'Technologies:'];
   const subWebsite = ['React.js', 'NextUI']
   const Takaful = [
     'A web application that enables the administration to post programs on the website allows participants to register for them. Also, participants have been automatically distributed for transportation.',
@@ -28,28 +30,44 @@ const Projects = () => {
   ];
   const subChat = ['Python', 'Tkinter'];
   return (
-    <div className="conText flex flex-col justify-center items-center">
-      <div className="bgCont text-3xl flex flex-col justify-center items-center py-4 px-2">
-        <Accordion variant="splitted" selectionMode="multiple" className="accoDis flex flex-col justify-center items-center ">
-          {/* <AccordionItem aria-label="Accordion 1" title={<p className="text-2xl ">Personal Portfolio Website</p>} className="text-2xl font-medium text-gray-800 bg-white">
-            <ListItem items={PersonalWebsite} subitems={subWebsite} />
-          </AccordionItem> */}
-          <AccordionItem aria-label="Accordion 1" title={<p className="text-2xl font-bold">Takaful</p>} className="w-full  text-2xl font-medium text-gray-800 bg-white">
-            <ListItem items={Takaful} subitems={subTakaful} />
-          </AccordionItem>
-          <AccordionItem aria-label="Accordion 2" title={<p className="text-2xl font-bold">OnlyBooks</p>} className="w-full text-2xl font-medium text-gray-800 bg-gray-400">
-            <ListItem items={OnlyBooks} />
-          </AccordionItem>
-          <AccordionItem aria-label="Accordion 3" title={<p className="text-2xl font-bold">Inky Puzzle</p>} className="w-full text-2xl font-medium text-gray-800 bg-gray-400">
-            <ListItem items={Inky} subitems={subInky} />
-          </AccordionItem>
-          <AccordionItem aria-label="Accordion 4" title={<p className="text-2xl font-bold">Chat Application</p>} className="w-full text-2xl font-medium text-gray-800 bg-gray-400">
-            <ListItem items={Chat} subitems={subChat} />
-          </AccordionItem>
-        </Accordion>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.75, ease: "easeOut" }}
+    >
+      <div className="conText flex flex-col justify-center items-center">
+        <div className="bgCont text-3xl flex flex-col justify-center items-center py-4 px-2">
+          <motion.div
+            initial={{ y: "100%" }}
+            animate={{ y: "0%" }}
+            exit={{ opacity: 1 }}
+            transition={{ duration: 0.75, ease: "easeOut" }}
+            className="w-[80vw]">
+            <Accordion variant="splitted" selectionMode="multiple" className="accoDis flex flex-col justify-center items-center ">
+              <AccordionItem aria-label="Accordion 1" title={<p className="text-2xl font-bold">Takaful</p>} className="w-full  text-2xl font-medium text-gray-800 bg-white">
+                <ListItem items={Takaful} subitems={subTakaful} />
+              </AccordionItem>
+              <AccordionItem aria-label="Accordion 2" title={<p className="text-2xl font-bold">OnlyBooks</p>} className="w-full text-2xl font-medium text-gray-800 bg-gray-400">
+                <ListItem items={OnlyBooks} />
+              </AccordionItem>
+              <AccordionItem aria-label="Accordion 3" title={<p className="text-2xl font-bold">Inky Puzzle</p>} className="w-full text-2xl font-medium text-gray-800 bg-gray-400">
+                <ListItem items={Inky} subitems={subInky} />
+              </AccordionItem>
+              <AccordionItem aria-label="Accordion 4" title={<p className="text-2xl font-bold">Chat Application</p>} className="w-full text-2xl font-medium text-gray-800 bg-gray-400">
+                <ListItem items={Chat} subitems={subChat} />
+              </AccordionItem>
+            </Accordion>
+          </motion.div>
+        </div>
       </div>
-    </div>
+    </motion.div>
+
   );
 };
 
 export default Projects;
+
+{/* <AccordionItem aria-label="Accordion 1" title={<p className="text-2xl ">Personal Portfolio Website</p>} className="text-2xl font-medium text-gray-800 bg-white">
+            <ListItem items={PersonalWebsite} subitems={subWebsite} />
+          </AccordionItem> */}

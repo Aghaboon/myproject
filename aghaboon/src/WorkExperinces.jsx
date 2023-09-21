@@ -1,5 +1,5 @@
-import NavBar from './NavBar';
 import ListItem from './ListItem';
+import { motion } from "framer-motion";
 
 const WorkExperinces = () => {
     const bineyes = ['Bineyes', 'June 2023 – August 2023', 'Academic Achievements:']
@@ -10,15 +10,22 @@ const WorkExperinces = () => {
         'Utilized: Figma, HTML, CSS, JavaScript, Django, Jira.'
     ]
     return (
-        <div className='conText flex flex-col justify-center items-center'>
-            <div className='bgCont py-2 px-4'>
-                <article>
-                    <b className='mainText text-3xl'>Front-end Development Intern</b>
-                    <ListItem items={bineyes} subitems={Achievements} />
-                </article>
-            </div>
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.75, ease: "easeOut" }}
+        >
+            <div className='conText flex flex-col justify-center items-center'>
+                <div className='bgCont py-2 px-4'>
+                    <article>
+                        <b className='mainText text-3xl'>Front-end Development Intern</b>
+                        <ListItem items={bineyes} subitems={Achievements} />
+                    </article>
+                </div>
 
-        </div>
+            </div>
+        </motion.div>
+
     );
 }
 

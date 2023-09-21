@@ -7,14 +7,14 @@ import Projects from './Projects';
 import Skills from './Skills';
 import ContactMe from './ContactMe';
 import { Outlet } from 'react-router-dom';
-import {createBrowserRouter, RouterProvider, } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider, } from 'react-router-dom'
+import { AnimatePresence } from 'framer-motion';
 
-
-const router = createBrowserRouter ([
+const router = createBrowserRouter([
   {
     path: '/',
     element: <div><NavbarWrapper /></div>,
-    children:[
+    children: [
       {
         path: '/',
         element: <div><Home /></div>,
@@ -41,24 +41,26 @@ const router = createBrowserRouter ([
       },
     ]
   },
-  
+
 ])
 
- function NavbarWrapper (){
+function NavbarWrapper() {
   return (
-      <div>
-        <NavBar />
-        <Outlet />
-      </div>
+    <div>
+      <NavBar />
+      <Outlet />
+    </div>
   )
-} 
+}
 
 function App() {
   return (
-    <>
-      <RouterProvider router={router} /> 
-    </>
-    
+    <div>
+      <AnimatePresence>
+        <RouterProvider router={router} />
+      </AnimatePresence>
+    </div>
+
   );
 }
 

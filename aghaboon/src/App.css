@@ -54,11 +54,15 @@
   box-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
   border-radius: 0.5rem; /* 8px */
 }
-@media (max-width: 750px) {
+
+@media (max-width: 768px) {
   .flex-reverse {
     display: flex;
     flex-direction: column;
   }
+}
+
+@media (max-width: 750px) {
   .navmobile , .bgCont{
     width: 85vw;
   }
